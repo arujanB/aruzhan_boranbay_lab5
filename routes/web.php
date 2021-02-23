@@ -80,7 +80,7 @@ Route::get('/examplee2', function(){
 });
 
 //compact()
-Route::get('/ex/{name}/{age}', function($name, $age){
+Route::get('/exx/{name}/{age}', function($name, $age){
 	return view('example', compact('name', 'age' ));
 });
 
