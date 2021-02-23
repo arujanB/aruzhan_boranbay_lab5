@@ -75,7 +75,7 @@ Route::get('/examplee', function(){
 });
 
 //with()
-Route::get('/example2', function(){
+Route::get('/examplee2', function(){
 	return view('example') -> with("name", "Aruzhan")-> with("age", "18");
 });
 
