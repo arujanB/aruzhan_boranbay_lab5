@@ -11,5 +11,5 @@
 </html> -->
 
 <?php
-echo "Date of birth: ".$dateof;
+echo "Date  of birth: ".$dateof;
 ?>
