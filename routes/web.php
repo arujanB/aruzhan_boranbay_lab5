@@ -86,5 +86,5 @@ Route::get('/exx/{name}/{age}', function($name, $age){
 
 // Route::get('/calculator/{n1}/{sign}/{n2}', 'CalculatorCantroller@c');
 
-Route::get('/hw5/{id}/{dateof}/{age}', 'CalculatorCantroller@show');
+Route::get('/hw5/{id}/{dateof}/{age}', 'CalculatorController@show');
 

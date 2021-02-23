@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CalculatorCantroller extends Controller
+class CalculatorController extends Controller
 {
-    //1
+	//1
     // public function c ($n1, $sign, $n2){
     // 	switch ($sign) {
     // 		case '+':
@@ -29,7 +29,7 @@ class CalculatorCantroller extends Controller
     // }
     //
     public function get_students(){
-        static $name = array(0=>"Dauren", 1=>"Talgat", 2=>"Macsat");
+        static $name = array(0=>"Dauren", 1=>"Talgat", 2=>"Maksat");
         return $name;
     }
 
@@ -48,6 +48,7 @@ class CalculatorCantroller extends Controller
         $students = $this->get_students();
         $da = $this->get_date();
         $a = $this->get_age();
-        return view("hw1", ["name"=> $students[$id]]).'<br>'.view("hw2", ['dateof'=> $da[$dateof]]).'<br>'.view("hw3", ['age'=>$a[$age]]);
+        return view("hw1", ["name"=> $students[$id]]).'<br>'.view('hw2') -> with("dateof", $da[$dateof]).'<br>'.view('hw3', compact('age',$a[$age]));
     }
+    //
 }
