@@ -65,7 +65,7 @@ Route::get('/controller', 'StudentController@index');
 
 //Route::resource('/resource/{id}', 'StudentController');
 
-Route::resource('/onlyr', "StudentController", ['only' => ['index', 'create']]);
+Route::resource('/onlr', "StudentController", ['only' => ['index', 'create']]);
 
 //Route::recource('/student', 'StudentController', ['names' => ['crate' => '/student.buld']]);
 
