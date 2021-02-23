@@ -70,7 +70,7 @@ Route::resource('/onlyr', "StudentController", ['only' => ['index', 'create']]);
 //Route::recource('/student', 'StudentController', ['names' => ['crate' => '/student.buld']]);
 
 //array
-Route::get('/example', function(){
+Route::get('/examplee', function(){
 	return view('example', ["name" => "Alnur", 'age' => '19']);
 });
 
