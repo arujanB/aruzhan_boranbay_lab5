@@ -70,17 +70,17 @@ Route::resource('/onlr', "StudentController", ['only' => ['index', 'create']]);
 //Route::recource('/student', 'StudentController', ['names' => ['crate' => '/student.buld']]);
 
 //array
-Route::get('/examplee', function(){
+Route::get('/example', function(){
 	return view('example', ["name" => "Alnur", 'age' => '19']);
 });
 
 //with()
-Route::get('/examplee2', function(){
+Route::get('/example2', function(){
 	return view('example') -> with("name", "Aruzhan")-> with("age", "18");
 });
 
 //compact()
-Route::get('/exx/{name}/{age}', function($name, $age){
+Route::get('/ex/{name}/{age}', function($name, $age){
 	return view('example', compact('name', 'age' ));
 });
 
